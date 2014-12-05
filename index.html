@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+<title> </title> 
+<link rel="stylesheet" href="Stylesheet.css" /> <!--this is the link to my stylesheet for the about page-->
+<script
+		src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false">
+</script>
+<script>
+			function initialize()
+			{
+			var mapOpt = {
+			center:new google.maps.LatLng(51.508742,-0.120850),
+				zoom:5,
+			mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapOpt);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</head>
+	<body>
+
+		<div id="wrapper"><!--This is my wrapper so it fits to all screens-->
+		
+			<div id="top">
+			
+			<img src="logo.png.png" alt="logo">	<!--i made the logo in paint-->	
+					<form id="tfnewsearch" method="get" action="http://www.google.com"><!--i got this code off one of my classmates, who got it off the internet-->
+						<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton"><!--shannon found this code on the internet and sent it to me-->
+					</form>	
+			</div>
+			<div id="left"> 
+				<fieldset id="homepage"><!--I got the following code from the notes on moodle.-->
+					<a href="index.html">Home</a>
+					<br/>
+					<br/>
+					<a href="about.html">About</a>
+					<br/>
+					<br/>
+					<a href="services.html">Services</a>
+					<br/>
+					<br/>
+					<a href="contact.html">Contact</a>
+					<br/>
+					<br/>
+					
+				
+				</fieldset>
+			</div>
+			
+			<div id="main">
+				
+				<fieldset id="online"><!--i got the code from moodle notes-->
+					<legend><b>Online Check-in</b></legend>
+						<form  name="myForm" onsubmit= "confirm('You are checked in for your Flight, Thank You')">
+							<br/>
+							<b>Reservation Number</b><br/><input type="text" name="number" required><b> From	</b>					
+																	<select>
+																	<option value="London">New York</option>
+																	<option value="London">London</option>
+																	<option value="Dublin">Dublin</option>
+																	<option value="Dubai">Dubai</option>
+																	<option value="Milan">Milan</option>
+																	<option value="Rome">Rome</option>
+																	<option value="Verona">Verona</option>
+																	<option value="Barcelona">Barcelona</option>
+																	<option value="Faro">Faro</option>
+																	<option value="Cork">Cork</option>
+																	<option value="Lisbon">Lisbon </option>
+																	<option value="Palma">Palma </option>
+																	<option value="Malta">Malta </option>
+																	<option value="Manchester">Manchester</option>
+																	<option value="Madrid">Madrid </option>
+																	<option value="Gran Canaria">Gran Canaria </option>
+																	<option value="Andorra">Andorra</option>
+																	<option value="Austria">Austria</option>
+																	</select>
+																	<br/>	
+							<b>Email Address</b><br/>
+							<input type="text" name="email" required> <b>To</b>					
+																	<select>
+																	<option value="London">New York</option>
+																	<option value="London">London</option>
+																	<option value="Dublin">Dublin</option>
+																	<option value="Dubai">Dubai</option>
+																	<option value="Milan">Milan</option>
+																	<option value="Rome">Rome</option>
+																	<option value="Verona">Verona</option>
+																	<option value="Barcelona">Barcelona</option>
+																	<option value="Faro">Faro</option>
+																	<option value="Cork">Cork</option>
+																	<option value="Lisbon">Lisbon </option>
+																	<option value="Palma">Palma </option>
+																	<option value="Malta">Malta </option>
+																	<option value="Manchester">Manchester</option>
+																	<option value="Madrid">Madrid </option>
+																	<option value="Gran Canaria">Gran Canaria </option>
+																	<option value="Andorra">Andorra</option>
+																	<option value="Austria">Austria</option>
+																	</select>
+																	<br/>	
+																	<br/>
+								<button type="submit">Check in</button>									
+						</form>
+								
+				
+				</fieldset>
+					
+				
+				<form> 
+					 <fieldset id="fieldset1">
+						<legend><b>Flight Finder</b></legend>
+						
+						Fight Number:
+						<br/>
+						<input type="text" name="flight number" value="flight no."/>
+						<br/>
+						
+						To: <br/>
+						<select>
+						<option value="London">New York</option>
+						<option value="London">London</option>
+						<option value="Dublin">Dublin</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Milan">Milan</option>
+						<option value="Rome">Rome</option>
+						<option value="Verona">Verona</option>
+						<option value="Barcelona">Barcelona</option>
+						<option value="Faro">Faro</option>
+						<option value="Cork">Cork</option>
+						<option value="Lisbon">Lisbon </option>
+						<option value="Palma">Palma </option>
+						<option value="Malta">Malta </option>
+						<option value="Manchester">Manchester</option>
+						<option value="Madrid">Madrid </option>
+						<option value="Gran Canaria">Gran Canaria </option>
+						<option value="Andorra">Andorra</option>
+						<option value="Austria">Austria</option>
+						</select>
+						<br/>
+						
+						From:
+						<br/>
+						<select>
+						<option value="London">New York</option>
+						<option value="London">London</option>
+						<option value="Dublin">Dublin</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Milan">Milan</option>
+						<option value="Rome">Rome</option>
+						<option value="Verona">Verona</option>
+						<option value="Barcelona">Barcelona</option>
+						<option value="Faro">Faro</option>
+						<option value="Cork">Cork</option>
+						<option value="Lisbon">Lisbon </option>
+						<option value="Palma">Palma </option>
+						<option value="Malta">Malta </option>
+						<option value="Manchester">Manchester</option>
+						<option value="Madrid">Madrid </option>
+						<option value="Gran Canaria">Gran Canaria </option>
+						<option value="Andorra">Andorra</option>
+						<option value="Austria">Austria</option>
+						</select>
+						<br/>
+						
+						Date of flight:
+						<br/>
+						<input type="date" name="date of flight" >
+						
+					</fieldset>
+				
+				</form>
+				<br />
+								<div id="newdiv">	<!-- i got this code from John in the class-->
+									<div id="imageGallery">
+									  <div class="imageZoom">
+										<ul>
+										  <li id="slide1"><a href="#"><img alt="Bild 1" src="london.jpg" /></a></li>
+										 
+										  <li id="slide6"><a href="#"><img alt="Bild 6" src="rome.jpg" /></a></li>
+										 
+										  <li id="slide7"><a href="#"><img alt="Bild 6" src="pariss.jpg" /></a></li>
+										 
+										   <li id="slide9"><a href="#"><img alt="Bild 6" src="newyork.jpg" /></a></li>
+										   
+										    <li id="slide12"><a href="#"><img alt="Bild 6" src="dubai.jpg" /></a></li>
+											
+											 <li id="slide17"><a href="#"><img alt="Bild 6" src="austria.jpg" /></a></li>
+											 
+											  <li id="slide99"><a href="#"><img alt="Bild 6" src="barcelona.jpg" /></a></li>
+											  
+											   <li id="slide23"><a href="#"><img alt="Bild 6" src="lisbon.jpg" /></a></li>
+										</ul>
+									  </div>
+									  <div class="imagePreview">
+										<ul>
+										  <li><a href="#slide1"><img alt="Vorschaubild 1" src="london.jpg" height="40" width="40"/>London</a></li>
+										 
+										  <li><a href="#slide6"><img alt="Vorschaubild 6" src="rome.jpg" height="40" width="40" />Rome</a></li>
+										  
+										  <li><a href="#slide7"><img alt="Vorschaubild 6" src="pariss.jpg" height="40" width="40" />Paris</a></li>
+										
+										   <li><a href="#slide9"><img alt="Vorschaubild 6" src="newyork.jpg" height="40" width="40" />New York</a></li>
+										   
+										   <li><a href="#slide12"><img alt="Vorschaubild 6" src="dubai.jpg" height="40" width="40" />Dubai</a></li>
+											
+											<li><a href="#slide17"><img alt="Vorschaubild 6" src="austria.jpg" height="40" width="40" />Austria</a></li>
+											 
+											<li><a href="#slide99"><img alt="Vorschaubild 6" src="barcelona.jpg" height="40" width="40" />Barcelona</a></li>
+											  
+											<li><a href="#slide23"><img alt="Vorschaubild 6" src="lisbon.jpg" height="40" width="40" />Lisbon</a></li>
+										 
+										</ul>
+									  </div>
+									</div>
+								</div>
+									
+				<br/>
+				
+				<div id="googleMap" ></div> 
+				
+				
+			
+					
+			</div>
+			
+			
+		</div>
+			<div id="footer">
+				<fieldset id="network"><!--got this from moodle-->
+							<legend><b>Follow,Like &amp;  Add us on:</b></legend>
+										<a href="https://www.facebook.com/"><img class="img" src="facebook.jpg" alt="facebook" width="50" height="50"></a>
+										<a href="https://twitter.com/"><img class="img" src="twitter.jpg" alt="twitter" width="50" height="50"></a>
+										<a href="https://instagram.com/"><img class="img" src="insta.jpg" alt="instagram" width="50" height="50"></a>
+										<a href="https://accounts.google.com"><img class="img" src="google.jpg" alt="google" width="50" height="50"></a>
+						</fieldset>		
+				
+				
+						<img class="img" src="carrental.jpg" alt="carrent" width="110" height="90">
+					
+				
+					
+						<img class="img" src="hoteldeal.jpg" alt="hoteldeal" width="110" height="90">
+					
+					
+					
+						<img class="img" src="steamdeals.jpg" alt="steamdeal" width="110" height="90">
+					
+				
+						<img class="img" src="ticketdeals2.png" alt="ticketdeal" width="110" height="90">
+				
+				
+				
+				
+								
+			</div>
+	</body>
+
+</html>

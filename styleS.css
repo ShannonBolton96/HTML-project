@@ -1,0 +1,78 @@
+
+body
+{
+background:white;
+margin:20px;
+background-image:url(clouds.jpg);
+background-repeat:no repeat;
+background-size:cover;
+}
+
+#wrapper
+{
+margin:0 auto;
+width:960px;
+background-color:#82CAFF;
+height:700px;
+}
+
+#tfheader
+{
+width:37%;
+float:right; 
+}
+
+#top
+{
+width:100%;
+height:20%;
+background-color:#FF4500;
+}
+#form1
+{
+width: 30%;
+float: left;
+}
+
+#form2
+{
+width: 68%;
+float: left;
+}
+
+#form3
+{
+width: 68%;
+float: left;
+}
+
+#left
+{
+width:20%;
+height:80%;
+background-color:#82CAFF;
+float:left;
+}
+
+#homepage
+{display:block;
+margin-left:2px;
+margin-right:550px;
+color:black;
+background:white;
+}
+
+#services
+{
+width: 40%;
+height: 68%;
+float: left;
+}
+
+#main 
+{
+width:23%;
+height:60%;        
+background-color:#82CAFF;
+float:left; 
+}

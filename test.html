@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+<title> </title> 
+<script type="text/javascript">
+
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+var image= new Array ("samhtml2/london.jpg","samhtml2/rome.jpg","samhtml2/newyork.jpg);
+var image_number=0;
+var image_length=image.lenght - 1;
+
+function chamnge_image(num){
+image_number= image number + num;
+if (image_number > image_length){
+image_number=0;
+}
+if (image_number<0){
+
+image_number=image_length;
+
+	}
+	document.slideshow.src=image[image_number];
+	return false;
+	}
+	function auto(){
+	setInterval("change_image(1)",3000);
+</script>
+
+
+
+<img src="london.jpg" name="slideshow"/>
+
+<table>
+	<tr>
+		<td align="left"><a href="" onclick="return change_image(-1)">Previous</td>
+		<td align="right"><a href="javascript;change_image(1)">Next</a></td>
+		<td align="right"><a href="javascript;auto()">Auto</a></td>
+	</tr>
+</table>
+
+<div id="description">
+
+
+
+
+
+
+</body>
+
+</html>

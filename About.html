@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+	
+<title> </title> 
+
+<link rel="stylesheet" href="about.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").slideUp();
+  });
+  $(".btn2").click(function(){
+    $("p").slideDown();
+  });
+});
+</script>
+
+
+</head>
+	<body onload="$('p').slideUp()">
+		
+		<div id="wrapper">
+		
+			<div id="top">
+					<form id="tfnewsearch" method="get" action="http://www.google.com">
+						<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+					</form>	
+			
+			<img src="logo.png.png" alt="logo"> 
+			
+			</div>
+			
+			<div id="left" class="dropdown"> 
+			
+					<fieldset id="homepage"><!--I got the following code from the notes on moodle.-->
+					<a href="index.html">Home</a>
+					<br/>
+					<br/>
+					<a href="about.html">About</a>
+					<br/>
+					<br/>
+					<a href="services.html">Services</a>
+					<br/>
+					<br/>
+					<a href="contact.html">Contact</a>
+					<br/>
+					<br/>
+					
+				
+				</fieldset>
+			</div>
+			
+			<div id="main">
+				<img id="plane" src="plane5.png" alt="plane" width="500" height="150">
+				
+				<fieldset id="Greeting">
+				<legend><b>Welcome to SS Airlines</b></legend>
+				Welcome to SS Airlines were our goal is to keep customers happy,safe and punctual.<br/>
+				We want our customers to know we appreciate their loyalty and are thankful for their business.<br/>
+				</fieldset>
+				<b>FAQ</b>
+				<div id="faq">
+					<p> <b>How do I change my contact details?</b> </p>
+						<p>- By editing your account or getting in contact with our customer service.</p>
+					<p><b>Why have I not received a statement?</b></p>
+						<p>-You will receive it in the next 3 days if not please contact our customer service.</p>
+						<p>-Also check your email</p> 
+					<p> <b>I do not have access to email so how can I get a statement?</b> </p>
+					   <p> -By contacting our customer service and asking for it to be posted.</p>
+					<p><b>Can I change a flight date, time, route?</b></p>
+						<p>-Yes you can change it by contacting our customer service?</p>
+					<p><b>How do I check in online?</b></p>
+						<p>-By logining in on our homepage.</p>
+					<p> <b>Can I book a flight for next year? </b> </p>
+						<p>-If the dates or the particular flight is up.</p> 
+					<p> <b>what are the prohibited items in the cabin? </b></p>
+					<p>-cigarettes<br/>-glass bottles<br/>-aerosols<br/>-sharp objects<br/>-liquids over 100ml<br/></p>
+					<p><b>How long do before my flight, do I have to be in the airport?</b></p>
+					<p> - Ensure to be in the airport 2 hours before the flight.</p>
+					
+				
+				
+					<button class="btn1">Close FAOs</button><!-- I got this from http://stackoverflow.com/questions/15899425/execute-slidedown-with-if-esle-->
+					<button class="btn2">Show FAOs</button>
+				</div>
+				<br/>
+				<div id="history">
+					<fieldset>
+					
+						<legend><b>About SS Airlines</b></legend>
+							<br />
+							SS Airlines was founded in 2012.
+							<br />
+							It is one of the most respected travel brands around the world. Even though we are a new company we have already got  continuous customers.
+							<br />
+							One of our main focuses is customer satisfaction, We also have an amazing On-time record. 
+							Our low cost flights are already very well known, our new modern plane interior gives a great feel for our customers which helps them to relax and enjoy the flight.
+							<br />
+							Our staff are fully trained to a high standard to give maximum satisfaction while flying with SS Airlines.
+							<br />
+							250 cities in 40 countries with an average of 3,000 flights daily.
+							<br />
+							We welcome anyone to our airline, So please fly with SS Airlines- WHo knows where tomorrow will take you!
+							<br/>
+					</fieldset>	
+				</div>
+				<br/>
+				<br/>
+				
+				<div>
+				<h3><b>Mission Statement</b></h3>
+			To raise customer satisfaction by delivering our promises in providing the highest standards of service and reliability marked by genuine SS Airlines hospitality, commitment to safety and consistent value delivered by passionate people.
+				</div>
+				<br/>
+				
+				
+				
+				
+				<div id="footer">
+					
+				
+						<fieldset id="network">
+							<legend><b>Follow,Like &amp;  Add us on:</b></legend>
+										<a href="https://www.facebook.com/"><img class="img" src="facebook.jpg" alt="facebook" width="50" height="50"></a>
+										<a href="https://twitter.com/"><img class="img" src="twitter.jpg" alt="twitter" width="50" height="50"></a>
+										<a href="https://instagram.com/"><img class="img" src="insta.jpg" alt="instagram" width="50" height="50"></a>
+										<a href="https://accounts.google.com"><img class="img" src="google.jpg" alt="google" width="50" height="50"></a>
+						</fieldset>		
+				
+					
+				</div>	
+			
+			
+			
+			
+		</div>
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+</html>

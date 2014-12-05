@@ -2,7 +2,7 @@ body
 {
 background:white;
 margin:20px;
-background-image: url(/samhtml2/clouds.jpg);
+background-image: url(clouds.jpg);
 background-repeat: no repeat;
 background-size: cover;
 }
